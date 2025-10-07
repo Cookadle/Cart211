@@ -134,8 +134,7 @@ article figure figcaption{
         margin: 0px auto;
         margin-bottom: 50px;
         width: 100%;
-        box-sizing: border-box;
-        padding:10px 0;
+        padding:30px 0;
         line-height: 30px;
         position: relative;
         display: flex;
