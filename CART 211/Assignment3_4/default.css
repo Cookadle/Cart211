@@ -1,7 +1,7 @@
 body {
- font-family: "Work Sans", sans-serif; 
+font-family: "Work Sans", sans-serif; 
 font-optical-sizing: auto;
-font-weight: <weight>;
+font-weight: 100;
 font-style: normal;
 padding: 0;
 margin: 0; 
@@ -144,7 +144,7 @@ article figure figcaption{
         border-bottom: 4px solid #000;
         background:#000;
         z-index: 1000;
-        color: white
+        color: white ;
          float: none;
     }
     nav a{
@@ -160,7 +160,6 @@ article figure figcaption{
             margin: 0 auto;
             float: none;
             line-height: 150%;
-            
         }
         main{
             text-align:justify ;
@@ -173,4 +172,4 @@ article figure figcaption{
             grid-template-columns: auto auto;
             gap: 16px;
 }
-};
+}
