@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+ <script src="script.js" defer></script>
+
+</head>
+
+<body onload="generate()">
+   <!-- Top-left camera -->
+    <div class="camera top-left">
+        <img src="camera.png" alt="Camera">
+    </div>
+
+    <!-- Top-right camera -->
+    <div class="camera top-right">
+        <img src="camera.png" alt="Camera">
+    </div>
+<!-- CAPTCHA card -->
+  <div class="captcha-card">
+    <h2>Are you human?</h2>
+
+    <div id="image"></div>
+
+    <div class="input-row">
+        <input type="text" id="user-input" placeholder="Enter the code">
+        <button id="btn" onclick="printmsg()">Verify my humanity</button>
+    </div>
+
+    <p id="key"></p>
+
+    <button class="refresh-btn" onclick="generate()">
+        🔄 Refresh CAPTCHA
+    </button>
+</div>
+
+</div>
+</body>
+
+</html>
