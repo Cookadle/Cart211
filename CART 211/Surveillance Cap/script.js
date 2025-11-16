@@ -17,10 +17,14 @@ function printmsg() {
     const user_input = document.getElementById("user-input").value;
 
     if (user_input === captcha.innerHTML) {
-        document.getElementById("key").innerHTML = "Matched ✅";
-        generate();
+        document.getElementById("key").innerHTML = "Matched ✅ Redirecting...";
+          sessionStorage.setItem("captchaPassed", "true");
+        // Redirect to the next page
+       setTimeout(() => {
+            window.location.href = "home.html"; // <-- change if your page has another name
+        }, 1000);
     } else {
         document.getElementById("key").innerHTML = "Not Matched ❌";
-        generate();
+        generate(); // will refresh CAPTCHA
     }
 }
