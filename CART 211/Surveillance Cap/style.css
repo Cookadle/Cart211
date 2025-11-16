@@ -1,4 +1,4 @@
-/* Center the whole card */
+/* Body layout */
 body {
     display: flex;
     justify-content: center;
@@ -7,64 +7,51 @@ body {
     margin: 0;
     background: #f0f0f0;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
-/* Card container */
+/* CAPTCHA card */
 .captcha-card {
-    background: white;
+    background: rgb(207, 194, 211);
     padding: 30px 40px;
     border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 25px rgba(221, 1, 1, 0.425);
     text-align: center;
-    width: 350px;
+    width: 400px;
 }
 
-/* Title */
-.captcha-card h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-/* CAPTCHA display box */
+/* CAPTCHA display */
 #image {
     width: 100%;
-    height: 90px;
-    border: 2px solid #d00;
-    background: #fafafa;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    background: #ffffffd3;
     font-size: 48px;
     font-weight: bold;
     letter-spacing: 8px;
     font-style: italic;
     text-decoration: line-through;
-    user-select: none;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 20px;
 }
 
-/* Input + button inline */
+/* Input row */
 .input-row {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-/* Input field */
 #user-input {
     flex: 1;
     padding: 10px;
     font-size: 18px;
-    border: 1px solid #aaa;
+    border: 1px solid #fdf2f2;
     border-radius: 6px;
 }
 
-/* Main button */
 #btn {
     padding: 10px 20px;
     background: #007bff;
@@ -80,14 +67,12 @@ body {
     background: #0056b3;
 }
 
-/* Message text */
 #key {
     font-size: 18px;
     margin-top: 15px;
     color: #d00;
 }
 
-/* Refresh CAPTCHA button */
 .refresh-btn {
     margin-top: 15px;
     background: #444;
@@ -102,3 +87,27 @@ body {
 .refresh-btn:hover {
     background: #222;
 }
+
+/* Static Cameras in corners */
+.camera {
+    position: fixed;
+    width: 200px;   /* Bigger size */
+    height: 200px;  /* Bigger size */
+    z-index: 1000;
+}
+
+.camera.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.camera.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.camera img {
+    width: 100%;
+    height: 100%;
+}
+
