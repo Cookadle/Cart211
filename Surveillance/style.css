@@ -1,12 +1,12 @@
-/* ----------- GLOBAL BODY ----------- */
+/* -- BODY -- */
 body {
     margin: 0;
-    background: #f0f0f0;
+    background: #cea6a6;
     font-family: Arial, sans-serif;
-    color: #006400;
+    color: #0f0064;
 }
 
-/* ----------- CAMERA (STATIC CORNERS) ----------- */
+/* -- CAMERA (Styles the fixed camera GIFs on top corners)-- */
 .camera {
     position: fixed;
     width: 200px;
@@ -21,78 +21,85 @@ body {
 }
 
 .top-left {
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: -30px;
 }
 
 .top-right {
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: -30px;
 }
 
-/* ----------- NAVIGATION TABS ----------- */
+/* -- FONT -- */
+.rock-font {
+    font-family: 'Rock 3D', sans-serif;
+}
+
+/* -- NAVIGATION TABS ( Styles the top navigation bar and links)-- */
 .tabs {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #006400;
-    padding: 25px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    align-items: center; /* ensures vertical alignment */
+    background-color: #241517;
+    position: relative;
 }
 
 .tabs a,
-.dropdown-btn {
-    text-decoration: none;
-    color: white;
-    padding: 20px 32px;
-    font-size: 24px;
-    font-weight: bold;
-    transition: 0.3s;
+.dropdown-btn,
+.dropdown-content a {
+    display: inline-block;
     cursor: pointer;
+    font-family: 'Rock 3D', cursive;
+    color: white;
+    padding: 14px 20px;
+    font-size: 18px;
+    background-color: #241517;
+    text-decoration: none;
+    transition: 0.3s;
+    line-height: 1;
+    vertical-align: middle; 
 }
 
 .tabs a:hover,
-.dropdown:hover .dropdown-btn {
-    background-color: #004d00;
+.dropdown-btn:hover,
+.dropdown-content a:hover {
+    background-color: #140c0d;
 }
 
-/* ----------- DROPDOWN ----------- */
+/*-- DRPDOWN MENU --*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
+/* Hidden dropdown content until hovered */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #006400;
-    min-width: 240px;
-    z-index: 999;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 16px 20px;
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #004d00;
+    background-color: #d80cac;
+    min-width: 200px;
+    z-index: 1;
+    flex-direction: column;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
 }
-
-/* ----------- HOME PAGE CONTENT ----------- */
-.content-page {
+/* dropdown button behaves like a link */
+.dropdown-btn {
+    display: inline-block;
     text-align: center;
-    padding: 100px 20px;
+    line-height: 1.2;
 }
 
-/* ----------- CAPTCHA PAGE ONLY ----------- */
+/*-- PAGE CONTENT--*/
+.content {
+    text-align: center;
+    max-width: 800px;
+    margin: 100px auto; 
+    padding: 0 20px;
+}
+
+/* -- CAPTCHA -- */
 body.captcha-page {
     display: flex;
     justify-content: center;
@@ -150,9 +157,7 @@ body.captcha-page {
     transition: 0.2s;
 }
 
-#btn:hover {
-    background: #0056b3;
-}
+#btn:hover { background: #0056b3; }
 
 #key {
     font-size: 18px;
@@ -171,6 +176,4 @@ body.captcha-page {
     font-size: 16px;
 }
 
-.refresh-btn:hover {
-    background: #222;
-}
+.refresh-btn:hover { background: #222; }

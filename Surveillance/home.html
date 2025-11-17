@@ -4,7 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lab Rat Chronicles: Where Is Your Data?</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+/* Apply Rock 3D font only to the tabs */
+.tabs a,
+.dropdown-btn,
+.dropdown-content a {
+    font-family: 'Rock 3D', sans-serif;
+}
+</style>
 </head>
 
 <body>
@@ -13,7 +28,6 @@
 <div class="camera top-left">
     <img src="assets/camara-left.gif" alt="Camera left">
 </div>
-
 <div class="camera top-right">
     <img src="assets/camera-right.gif" alt="Camera right">
 </div>
@@ -43,7 +57,7 @@ if (sessionStorage.getItem("captchaPassed") !== "true") {
 </div>
 
 <!-- Page Content -->
-<div class="content-page">
+<div class="content">
     <h1>Surveillance Capitalism Unmasked</h1>
     <p>What is surveillance? Is it real? Is it a conspiracy?</p>
 </div>
