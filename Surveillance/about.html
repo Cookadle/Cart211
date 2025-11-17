@@ -4,22 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About</title>
-<style>
-/* Same styling as home.html */
-body { font-family: Arial, sans-serif; margin: 0; background: #f0f0f0; color: #006400; }
-.camera { position: fixed; width: 80px; height: 80px; z-index: 1000; }
-.top-left { top: 10px; left: 10px; }
-.top-right { top: 10px; right: 10px; }
-.tabs { display: flex; justify-content: center; background-color: #006400; }
-.tabs a { text-decoration: none; background-color: #006400; color: white; padding: 14px 20px; font-size: 18px; transition: 0.3s; }
-.tabs a:hover { background-color: #004d00; }
-.content { text-align: center; padding: 100px; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="camera top-left"><img src="assets/camara-left.gif" width="80" alt="Camera left"></div>
-<div class="camera top-right"><img src="assets/camera-right.gif" width="80" alt="Camera right"></div>
+<!-- Camera GIFs -->
+<div class="camera top-left">
+    <img src="assets/camara-left.gif" alt="Camera left">
+</div>
+
+<div class="camera top-right">
+    <img src="assets/camera-right.gif" alt="Camera right">
+</div>
 
 <script>
 if (sessionStorage.getItem("captchaPassed") !== "true") {
@@ -28,17 +24,27 @@ if (sessionStorage.getItem("captchaPassed") !== "true") {
 }
 </script>
 
+<!-- Navigation Tabs -->
 <div class="tabs">
     <a href="home.html">Home</a>
     <a href="about.html">About</a>
-    <a href="bigbrother.html">Big Brother</a>
+
+    <div class="dropdown">
+        <span class="dropdown-btn">Big Brother</span>
+        <div class="dropdown-content">
+            <a href="bigbrother-sees.html">Big Brother Sees All</a>
+            <a href="bigbrother-hears.html">Big Brother Hears All</a>
+        </div>
+    </div>
+
     <a href="resources.html">Resources</a>
     <a href="authornote.html">Author Note</a>
 </div>
 
-<div class="content">
-    <h1>About Page</h1>
-    <p>This page contains information about the site.</p>
+<!-- Page Content -->
+<div class="content-page">
+    <h1>The Hidden Cost of Free: Your Privacy for Profit</h1>
+    <p>About the elephant in the room...</p>
 </div>
 
 </body>
