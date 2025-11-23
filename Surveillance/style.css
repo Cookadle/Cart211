@@ -30,20 +30,28 @@ body {
     right: -30px;
 }
 
-/*FONT And headers*/
+/*Font And headers,paragraph*/
 .rock-font {
     font-family: 'Rock 3D', sans-serif;
 }
-h1,h2,h3 {
-  font-family: 'Rubik Iso', sans-serif;
-  font-size: 3rem; 
+
+h1 {
+    font-family: 'Rubik Iso', sans-serif;
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Story Script';
+    font-size: 25px;
+    line-height: 1.5;
 }
 
 /*NAVIGATION TABS ( Styles the top navigation bar and links)*/
 .tabs {
     display: flex;
     justify-content: center;
-    align-items: center; /* ensures vertical alignment */
+    align-items: center;
+    /* ensures vertical alignment */
     background-color: #241517;
     position: relative;
 }
@@ -61,7 +69,7 @@ h1,h2,h3 {
     text-decoration: none;
     transition: 0.3s;
     line-height: 1;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 .tabs a:hover,
@@ -70,11 +78,12 @@ h1,h2,h3 {
     background-color: #140c0d;
 }
 
-/*DRPDOWN MENU*/
+/*dropdownmenu*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 /* Hidden dropdown content until hovered */
 .dropdown-content {
     display: none;
@@ -88,6 +97,7 @@ h1,h2,h3 {
 .dropdown:hover .dropdown-content {
     display: flex;
 }
+
 /* dropdown button behaves like a link */
 .dropdown-btn {
     display: inline-block;
@@ -99,13 +109,14 @@ h1,h2,h3 {
 .content {
     text-align: center;
     max-width: 800px;
-    margin: 100px auto; 
+    margin: 100px auto;
     padding: 0 20px;
 }
+
 /*LAPTOP GIF*/
 .creepy.laptop img {
-  width: 300px;
-  height: auto; 
+    width: 300px;
+    height: auto;
 }
 
 /*CAPTCHA */
@@ -117,10 +128,10 @@ body.captcha-page {
 }
 
 .captcha-card {
-    background: rgb(207, 194, 211);
+    background: #cfc2d3;
     padding: 30px 40px;
     border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(221, 1, 1, 0.425);
+    box-shadow: 0 8px 25px #dd01016c;
     text-align: center;
     width: 400px;
 }
@@ -166,7 +177,9 @@ body.captcha-page {
     transition: 0.2s;
 }
 
-#btn:hover { background: #0056b3; }
+#btn:hover {
+    background: #0056b3;
+}
 
 #key {
     font-size: 18px;
@@ -185,4 +198,142 @@ body.captcha-page {
     font-size: 16px;
 }
 
-.refresh-btn:hover { background: #222; }
+.refresh-btn:hover {
+    background: #222;
+} 
+/* Hamburger button */
+.hamburger {
+    display: none; /* will show regular tab on desktop and not hamb */
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+/*Mobile section /Optimizing for mobile*/
+@media (max-width: 600px) {
+
+    /* Camera GIFs mobile */
+    .camera {
+        width: 80px;
+        height: 80px;
+    }
+
+    .top-left {
+        left: -10px;
+        top: 5px;
+    }
+
+    .top-right {
+        right: -10px;
+        top: 5px;
+    }
+
+    /* Laptop GIF */
+    .creepy.laptop img {
+        width: 150px;
+    }
+
+    /* Navigation tabs stacked vertically */
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs a,
+    .dropdown-btn {
+        padding: 12px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Dropdown content on mobile */
+    .dropdown-content {
+        position: static;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
+        display: flex;
+    }
+
+    /*Content mobile*/
+    .content {
+        margin: 20px auto;
+        padding: 0 10px;
+        max-width: 95%;
+    }
+
+    /*Paragraph and headers and fonts on mobile*/
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /*Captcha mobile*/
+    .captcha-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #image {
+        height: 80px;
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+
+    #user-input {
+        font-size: 16px;
+    }
+
+    #btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .refresh-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+} 
+
+/* Mobile hamburger */
+    .hamburger {
+        display: block;
+        background-color: #241517;
+        text-align: left;
+    }
+
+    .tabs {
+        display: none; /* hidden by default */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tabs a, .dropdown-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 16px;
+        border-top: 1px solid #140c0d;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        flex-direction: column;
+    }
+
+    .dropdown.open .dropdown-content {
+        display: flex;
+    }
+}
