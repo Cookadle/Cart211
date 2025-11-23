@@ -81,20 +81,23 @@ p {
 /*dropdownmenu*/
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
+    flex-direction: column;
 }
-
 /* Hidden dropdown content until hovered */
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%; 
+    left: 0;
     background-color: #d80cac;
     min-width: 200px;
-    z-index: 1;
+    z-index: 10;
     flex-direction: column;
+    border-radius: 6px; 
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display: flex;
 }
 
@@ -201,14 +204,7 @@ body.captcha-page {
 .refresh-btn:hover {
     background: #222;
 } 
-/* Hamburger button */
-.hamburger {
-    display: none; /* will show regular tab on desktop and not hamb */
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    padding: 10px 20px;
-}
+
 
 
 /*Mobile section /Optimizing for mobile*/
