@@ -30,9 +30,13 @@ body {
     right: -30px;
 }
 
-/*FONT*/
+/*FONT And headers*/
 .rock-font {
     font-family: 'Rock 3D', sans-serif;
+}
+h1,h2,h3 {
+  font-family: 'Rubik Iso', sans-serif;
+  font-size: 3rem; 
 }
 
 /*NAVIGATION TABS ( Styles the top navigation bar and links)*/
