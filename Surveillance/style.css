@@ -306,34 +306,3 @@ body.captcha-page {
     }
 } 
 
-/* Mobile hamburger */
-    .hamburger {
-        display: block;
-        background-color: #241517;
-        text-align: left;
-    }
-
-    .tabs {
-        display: none; /* hidden by default */
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .tabs a, .dropdown-btn {
-        width: 100%;
-        text-align: center;
-        padding: 12px 0;
-        font-size: 16px;
-        border-top: 1px solid #140c0d;
-    }
-
-    .dropdown-content {
-        position: static;
-        display: none;
-        flex-direction: column;
-    }
-
-    .dropdown.open .dropdown-content {
-        display: flex;
-    }
-}
