@@ -59,18 +59,23 @@ p {
 .tabs a,
 .dropdown-btn,
 .dropdown-content a {
-    display: inline-block;
+    min-width: 800px;
+    height: 50px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
     cursor: pointer;
     font-family: 'Rock 3D', cursive;
     color: white;
-    padding: 14px 20px;
-    font-size: 18px;
-    background-color: #241517;
+    padding: 10px 20px; /* Adds inner size */
+    font-size: 14px; /* Bigger text */
+    border-radius: 8px;
+    background-color: #241517; /*inside of tab button*/
     text-decoration: none;
     transition: 0.3s;
-    line-height: 1;
-    vertical-align: middle;
+    white-space: normal;
 }
+
 
 .tabs a:hover,
 .dropdown-btn:hover,
@@ -273,21 +278,13 @@ body.captcha-page {
 /* Tab button styling (they will stay in one row) */
 .tabs a,
 .dropdown-btn {
-    min-width: 60px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #694a54;
-    /*inside of tab button*/
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    line-height: 1.2;
-    white-space: normal;
+   min-width: 80px !important;
+   height: 40px !important;
+   padding: 8px 14px !important;
+   font-size: 16px !important;
+   border-radius: 8px !important;
 }
+
 
 .tabs a:hover,
 /*color for when mouse is over button*/
@@ -369,5 +366,4 @@ p {
 .refresh-btn {
     font-size: 14px;
     padding: 8px 12px;
-}
 }
