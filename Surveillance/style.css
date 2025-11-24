@@ -93,7 +93,7 @@ p {
     left: 0;
     background-color: #d80cac;
     min-width: 200px;
-    z-index: 10;
+    z-index: 5000;
     flex-direction: column;
     border-radius: 6px;
 }
@@ -216,16 +216,17 @@ body.captcha-page {
 
 /*Mobile section /Optimizing for mobile*/
 @media (max-width: 600px) {
+
     /*Content mobile*/
     .content {
-    margin: 20px auto;
-    padding: 0 10px;
-    max-width: 95%;
+        margin: 20px auto;
+        padding: 0 10px;
+        max-width: 95%;
     }
 
     /* Camera GIFs mobile */
     .camera {
-       margin-top: 150px; 
+        margin-top: 150px;
 
     }
 
@@ -238,7 +239,7 @@ body.captcha-page {
         right: -70px;
         /*top: 0px;*/
     }
-    
+
     /* Laptop GIF */
     .creepy.laptop img {
         width: 150px;
@@ -246,62 +247,72 @@ body.captcha-page {
 
     /* Navigation tabs*/
     .tabs {
-        display: flex;                 
-        flex-direction: row;           
-        justify-content: flex-start;   
-        align-items: center;       
-        gap: 10px;                    
-        flex-wrap: nowrap;               
-        overflow-x: auto;       
-        white-space: nowrap;     
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
         padding: 10px;
-        scrollbar-width: none;   
-    } 
-    /* Hide scrollbar duh*/
-    .tabs::-webkit-scrollbar {
-        display: none;
+        scrollbar-width: none;
+        position: relative;
+        z-index: 3000;
+        overflow: visible; /*dropdown appear outside the tab row */
     }
+
+}
+
+/* Hide scrollbar duh*/
+.tabs::-webkit-scrollbar {
+    display: none;
+}
 
 
 /* Tab button styling (they will stay in one row) */
-    .tabs a,
-    .dropdown-btn {
-   min-width: 80px;              
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        border-radius: 8px;
-        background-color: #241517;
-        color: white;
-        font-size: 14px;
-        text-align: center;
-        line-height: 1.2;
-        white-space: normal;
-    }
-.tabs a:hover,
-    .dropdown-btn:hover {
-        background: linear-gradient(180deg, #ffb6b6, #ff8fcf);
-        transform: scale(1.05);
-    } 
+.tabs a,
+.dropdown-btn {
+    min-width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #694a54;
+    /*inside of tab button*/
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2;
+    white-space: normal;
+}
 
-    /* Dropdown content on mobile */
-    .dropdown-content {
-        position: absolute;
-        display: none;
-        flex-direction: column;
-        background-color: #050204;
-        min-width: 150px;
-        border-radius: 6px;
-        top: 100%;
-        left: 0;
-        z-index: 10;
-    }
-    .dropdown:hover .dropdown-content,
-    .dropdown:focus-within .dropdown-content {
-        display: flex;
-    }
+.tabs a:hover,
+/*color for when mouse is over button*/
+.dropdown-btn:hover {
+    background: linear-gradient(180deg, #ffb6b6, #ff8fcf);
+    transform: scale(1.05);
+}
+
+/* Dropdown content(aka big brother and ressources are controlled here) on mobile */
+.dropdown-content {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: #050202;
+    min-width: 150px;
+    border-radius: 6px;
+    top: 100%;
+    left: 0;
+    z-index: 5000;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: flex;
+}
 
 
 /*Paragraph and headers and fonts on mobile*/
@@ -313,18 +324,22 @@ h1 {
 body.home-page .content h1 {
     margin-top: 150px;
 }
+
 /* Lower heading placement on mobile(only) 4 about page  bc camera gifs*/
 body.about-page .content h1 {
-    margin-top: 200px; 
+    margin-top: 200px;
 }
+
 /* Lower heading placement on mobile(only) 4 bigbro sees all  bc camera gifs*/
 body.bigbrother-sees-page .content h1 {
-    margin-top: 150px; 
+    margin-top: 150px;
 }
+
 /* Lower heading placement on mobile(only) 4 bigbog hears all  bc camera gifs*/
 body.bigbrother-hears-page .content h1 {
-    margin-top: 150px; 
+    margin-top: 150px;
 }
+
 p {
     font-size: 16px;
     line-height: 1.5;
