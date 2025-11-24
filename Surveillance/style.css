@@ -1,19 +1,20 @@
 /* BODY */
 /* Centers content mostly the background picture*/
-.page-wrapper { 
-    max-width: 2000px; 
-    margin: 0 auto;       
+.page-wrapper {
+    max-width: 2000px;
+    margin: 0 auto;
     background-image: url('./assets/Mainbackground.png');
-    background-size: 60% auto ;
+    background-size: 60% auto;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;  /* make all pages look same even if nocontent */
+    min-height: 100vh;
+    /* make all pages look same even if no content for now*/
     padding: 60px;
-   
+
 
 }
 
-/* Body stays as color for side  */
+/* Body stays as color for the side  */
 body {
     margin: 0;
     background: #cea6a6;
@@ -21,7 +22,7 @@ body {
     color: #141414;
 }
 
-/*CAMERA (Styles the fixed camera GIFs on top corners)*/
+/*camera (Styles the fixed camera GIFs on top corners)*/
 .camera {
     position: fixed;
     width: 200px;
@@ -45,7 +46,7 @@ body {
     right: -30px;
 }
 
-/*Font And headers,paragraph*/
+/*Font and headers,paragraph*/
 .rock-font {
     font-family: 'Rock 3D', sans-serif;
 }
@@ -61,14 +62,17 @@ p {
     line-height: 1.5;
 }
 
-.highlight {/*for behind text*/
-  background: #ffe9e9;
-  
-  padding: 12px; /*to make box smaller*/
-  border-radius: 12px;
-  max-width: 400px; 
-  margin: 0 auto; /* centers the box */
-  display: block; /* ensures it centers properly */
+.highlight {
+    /*for behind text*/
+    background: #ffe9e9;
+    padding: 12px;
+    /*to make box smaller*/
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+    /* centers the box */
+    display: block;
+    /*will center it properly */
 
 }
 
@@ -78,7 +82,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff00; /*fuck it no background for tab*/
+    background-color: #ffffff00;
+    /*fuck it no background for tab*/
     z-index: 2000;
     position: relative;
 }
@@ -87,17 +92,18 @@ p {
 .dropdown-btn,
 .dropdown-content a {
     min-width: 800px;
-    height: 50px; 
+    height: 50px;
     display: flex;
-    justify-content: center; 
-    align-items: center;     
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     font-family: 'Rock 3D', cursive;
     color: white;
     padding: 10px 20px;
-    font-size: 14px; 
+    font-size: 14px;
     border-radius: 8px;
-    background-color: #1f666b; /*inside of tab button*/
+    background-color: #1f666b;
+    /*inside of tab button*/
     text-decoration: none;
     transition: 0.3s;
     white-space: normal;
@@ -136,13 +142,13 @@ p {
     line-height: 1.2;
 }
 
-/* Make dropdown open on click (mobile + desktop optimize) */
+/* Make dropdown open on click ( for a better mobile + desktop optimize) */
 .dropdown:focus-within .dropdown-content {
     display: flex;
 }
 
 
-/*PAGE CONTENT*/
+/*page content*/
 .content {
     text-align: center;
     max-width: 800px;
@@ -150,13 +156,13 @@ p {
     padding: 0 20px;
 }
 
-/*LAPTOP GIF*/
+/*laptop gif*/
 .creepy.laptop img {
     width: 300px;
     height: auto;
 }
 
-/*CAPTCHA */
+/*captcha positioning*/
 body.captcha-page {
     display: flex;
     justify-content: center;
@@ -164,6 +170,7 @@ body.captcha-page {
     height: 100vh;
 }
 
+/*Design of captcha box and inside content*/
 .captcha-card {
     background: #cfc2d3;
     padding: 30px 40px;
@@ -173,6 +180,7 @@ body.captcha-page {
     width: 400px;
 }
 
+/*how the inside of the box look basically*/
 #image {
     width: 100%;
     height: 100px;
@@ -189,11 +197,13 @@ body.captcha-page {
     margin-bottom: 20px;
 }
 
+/*box where the user put his things*/
 .input-row {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
+
 /*captcha input colour*/
 #user-input {
     flex: 1;
@@ -203,6 +213,7 @@ body.captcha-page {
     border-radius: 6px;
 }
 
+/*button to confirm captcha*/
 #btn {
     padding: 10px 20px;
     background: #007bff;
@@ -214,6 +225,7 @@ body.captcha-page {
     transition: 0.2s;
 }
 
+/*button to confirm captcha hover color*/
 #btn:hover {
     background: #0056b3;
 }
@@ -221,9 +233,9 @@ body.captcha-page {
 #key {
     font-size: 18px;
     margin-top: 15px;
-    color: #d00;
 }
 
+/*button to refresh captcha*/
 .refresh-btn {
     margin-top: 15px;
     background: #444;
@@ -235,20 +247,23 @@ body.captcha-page {
     font-size: 16px;
 }
 
+/*button to refresh captcha hover color*/
 .refresh-btn:hover {
     background: #222;
 }
 
 
 
-/*Mobile section /Optimizing for mobile*/
+/*Optimizing for mobile*/
 @media (max-width: 600px) {
-   /* Make background stretch horizontally on mobile */
+
+    /* Make background stretch horizontally on mobile */
     .page-wrapper {
-        background-size:cover;  
+        background-size: cover;
         background-position: top center;
-         min-height: 100dvh;          /* true fullscreen height */
-        padding: 20px 10px;          /* MUCH smaller padding */
+        min-height: 100dvh;
+        /* true fullscreen height */
+        padding: 20px 10px;
     }
 
     /*Content mobile*/
@@ -261,7 +276,7 @@ body.captcha-page {
     /* Camera GIFs mobile */
     .camera {
         margin-top: 150px;
-         width: 100px;
+        width: 100px;
         height: 100px;
 
     }
@@ -283,7 +298,7 @@ body.captcha-page {
 
     /* Navigation tabs*/
     .tabs {
-            flex-direction: row;
+        flex-direction: row;
         justify-content: flex-start;
         gap: 10px;
         flex-wrap: nowrap;
@@ -304,12 +319,12 @@ body.captcha-page {
 /* Tab button styling (they will stay in one row) important will override previous setting and allow them to both exist at the same time*/
 .tabs a,
 .dropdown-btn {
-min-width: 120px !important;
-        height: 40px !important;
-        padding: 6px 10px !important;
-        font-size: 14px !important;
-        border-radius: 8px !important;
-    }
+    min-width: 120px !important;
+    height: 40px !important;
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+    border-radius: 8px !important;
+}
 
 .tabs a:hover,
 /*color for when mouse is over button*/
@@ -320,12 +335,12 @@ min-width: 120px !important;
 
 /* Dropdown content(aka big brother and ressources are controlled here) on mobile */
 .dropdown-content {
-        background-color: #10445c;
-        min-width: 150px;
-        border-radius: 6px;
-        top: 100%;
-        left: 0;
-    
+    background-color: #10445c;
+    min-width: 150px;
+    border-radius: 6px;
+    top: 100%;
+    left: 0;
+
 }
 
 .dropdown:hover .dropdown-content,
@@ -358,15 +373,17 @@ body.bigbrother-sees-page .content h1 {
 body.bigbrother-hears-page .content h1 {
     margin-top: 150px;
 }
+
 h1 {
-     font-size: 2rem;
-     }
+    font-size: 2rem;
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
 }
 
-/*Captcha mobile*/
+/*Captcha mobile same step as the desktop captcha refer to captcha desktop comments if lost*/
 .captcha-card {
     width: 90%;
     padding: 20px;
