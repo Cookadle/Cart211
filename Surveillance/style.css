@@ -7,7 +7,6 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
     min-height: 100vh;  /* make all pages look same even if nocontent */
     padding: 60px;
    
@@ -15,10 +14,6 @@
 }
 
 /* Body stays as color for side  */
-body {
-    background: #cea6a6;
-}
-
 body {
     margin: 0;
     background: #cea6a6;
@@ -71,7 +66,7 @@ p {
   
   padding: 12px; /*to make box smaller*/
   border-radius: 12px;
-  max-width: 400px; /* adjust as you like */
+  max-width: 400px; 
   margin: 0 auto; /* centers the box */
   display: block; /* ensures it centers properly */
 
@@ -248,6 +243,13 @@ body.captcha-page {
 
 /*Mobile section /Optimizing for mobile*/
 @media (max-width: 600px) {
+   /* Make background stretch horizontally on mobile */
+    .page-wrapper {
+        background-size:cover;  
+        background-position: top center;
+         min-height: 100dvh;          /* true fullscreen height */
+        padding: 20px 10px;          /* MUCH smaller padding */
+    }
 
     /*Content mobile*/
     .content {
@@ -259,16 +261,18 @@ body.captcha-page {
     /* Camera GIFs mobile */
     .camera {
         margin-top: 150px;
+         width: 100px;
+        height: 100px;
 
     }
 
     .top-left {
-        left: -70px;
+        left: 10px;
         /*top: 0px;*/
     }
 
     .top-right {
-        right: -70px;
+        right: 10px;
         /*top: 0px;*/
     }
 
@@ -279,19 +283,14 @@ body.captcha-page {
 
     /* Navigation tabs*/
     .tabs {
-        display: flex;
-        flex-direction: row;
+            flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
         gap: 10px;
         flex-wrap: nowrap;
         overflow-x: auto;
         white-space: nowrap;
         padding: 10px;
         scrollbar-width: none;
-        position: relative;
-        z-index: 3000;
-        overflow: visible; /*dropdown appear outside the tab row */
     }
 
 }
@@ -305,13 +304,12 @@ body.captcha-page {
 /* Tab button styling (they will stay in one row) important will override previous setting and allow them to both exist at the same time*/
 .tabs a,
 .dropdown-btn {
-   min-width: 80px !important;
-   height: 40px !important;
-   padding: 8px 14px !important;
-   font-size: 16px !important;
-   border-radius: 8px !important;
-}
-
+min-width: 120px !important;
+        height: 40px !important;
+        padding: 6px 10px !important;
+        font-size: 14px !important;
+        border-radius: 8px !important;
+    }
 
 .tabs a:hover,
 /*color for when mouse is over button*/
@@ -322,15 +320,12 @@ body.captcha-page {
 
 /* Dropdown content(aka big brother and ressources are controlled here) on mobile */
 .dropdown-content {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    background-color: #10445c;/*color between option of scrolldown*/
-    min-width: 150px;
-    border-radius: 6px;
-    top: 100%;
-    left: 0;
-    z-index: 5000;
+        background-color: #10445c;
+        min-width: 150px;
+        border-radius: 6px;
+        top: 100%;
+        left: 0;
+    
 }
 
 .dropdown:hover .dropdown-content,
@@ -363,7 +358,9 @@ body.bigbrother-sees-page .content h1 {
 body.bigbrother-hears-page .content h1 {
     margin-top: 150px;
 }
-
+h1 {
+     font-size: 2rem;
+     }
 p {
     font-size: 16px;
     line-height: 1.5;
