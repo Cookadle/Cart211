@@ -4,7 +4,7 @@
     max-width: 2000px; 
     margin: 0 auto;       
     background-image: url('./assets/Mainbackground.png');
-    background-size: contain;
+    background-size: 60% auto ;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;  /* make all pages look same even if nocontent */

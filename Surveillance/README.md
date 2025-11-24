@@ -8,3 +8,4 @@ https://www.optery.com/an-in-depth-look-at-shoshana-zuboffs-theories-on-surveill
 
 add a pop up that can be close saying switch your phone vertically for better 
 if viewing this on smaller screen rotate for better user experience
+footer at the bottom could be aa href link which will lead you to the next page (easier for mobile)
