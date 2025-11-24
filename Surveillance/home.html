@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lab Rat Chronicles: Where Is Your Data?</title>
 
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Rock font -->
-<link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
-<!--Rubik iso font-->
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
-<!--Story script font-->
-<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Rat Chronicles: Where Is Your Data?</title>
 
-<style>
-/* Apply Rock 3D font only to the tabs */
-.tabs a,
-.dropdown-btn,
-.dropdown-content a {
-    font-family: 'Rock 3D', sans-serif;
-}
-</style>
-</head>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Rock font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap"
+            rel="stylesheet">
+        <!--Rubik iso font-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"
+            rel="stylesheet">
+        <!--Story script font-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 
-<body class="home-page">
+        <style>
+        /* Apply Rock 3D font only to the tabs */
+        .tabs a,
+        .dropdown-btn,
+        .dropdown-content a {
+            font-family: 'Rock 3D', sans-serif;
+        }
+    </style>
+    </head>
 
+    <body class="home-page">
 
-<!-- Camera GIFs -->
-<div class="camera top-left">
-    <img src="assets/camara-left.gif" alt="Camera left">
-</div>
-<div class="camera top-right">
-    <img src="assets/camera-right.gif" alt="Camera right">
-</div>
+        <div class="page-wrapper">
 
-<script>
-if (sessionStorage.getItem("captchaPassed") !== "true") {
-    alert("You must pass the CAPTCHA first!");
-    window.location.href = "index.html";
-}
-</script>
+            <!-- Camera GIFs -->
+            <div class="camera top-left">
+                <img src="assets/camara-left.gif" alt="Camera left">
+            </div>
+            <div class="camera top-right">
+                <img src="assets/camera-right.gif" alt="Camera right">
+            </div>
 
-<!-- Navigation Tabs -->
-<div class="tabs">
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
+            <script>
+            if (sessionStorage.getItem("captchaPassed") !== "true") {
+                alert("You must pass the CAPTCHA first!");
+                window.location.href = "index.html";
+            }
+        </script>
 
-    <div class="dropdown">
-     <button class="dropdown-btn"> Big Brother</button>
+            <!-- Navigation Tabs -->
+            <div class="tabs">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
 
+                <div class="dropdown">
+                    <button class="dropdown-btn"> Big Brother</button>
 
-        <div class="dropdown-content">
-            <a href="bigbrother-sees.html">Big Brother Sees All</a>
-            <a href="bigbrother-hears.html">Big Brother Hears All</a>
-        </div>
-    </div>
+                    <div class="dropdown-content">
+                        <a href="bigbrother-sees.html">Big Brother Sees All</a>
+                        <a href="bigbrother-hears.html">Big Brother Hears
+                            All</a>
+                    </div>
+                </div>
 
-    <a href="resources.html">Resources</a>
-    <a href="authornote.html">Author Note</a>
-</div>
+                <a href="resources.html">Resources</a>
+                <a href="authornote.html">Author Note</a>
+            </div>
 
-<!-- Page Content -->
-<div class="content">
-    <h1>Surveillance Capitalism Unmasked</h1>
-    <h2>
-    What is surveillance? Is it real? Is it a conspiracy?
-    </h2>
-     <!-- Top-right camera GIF -->
-    <div class="creepy laptop">
-        <img src="assets/HomeSC.gif" alt="Laptop with recording eye">
-    </div>
-    <p>
-     Surveillance capitalism is a term coined by Shoshana Zuboff (the lovely genius who inspired this chronicle), the Charles Edward Wilson Professor Emerita at Harvard Business School, to describe a new economic order in which companies collect and exploit personal data on a massive scale to predict and modify human behavior. 
-        </p>
-        <p> 
-       
+            <!-- Page Content -->
+            <div class="content">
+                <h1>Surveillance Capitalism Unmasked</h1>
+                <h2>
+                    What is surveillance? Is it real? Is it a conspiracy?
+                </h2>
+                <!-- Top-right camera GIF -->
+                <div class="creepy laptop">
+                    <img src="assets/HomeSC.gif"
+                        alt="Laptop with recording eye">
+                </div>
+                <p class="highlight">
+                    Surveillance capitalism is a term coined by Shoshana Zuboff <br>
+                    (the lovely genius who inspired this
+                    chronicle),<br> the Charles Edward Wilson Professor Emerita at
+                    Harvard Business School,<br> to describe a new
+                    economic order in which companies collect and exploit
+                    personal data <br>on a massive scale to predict and
+                    modify human behavior.
+                </p>
+                <p class="highlight">
 
-Surveillance capitalism is an economic system and business model that collects, analyzes, and monetizes vast amounts of personal data from individuals, often without explicit knowledge or consent, primarily through digital technologies and platforms, to generate profits.
+                    Surveillance capitalism is an economic system and business
+                    model that collects,<br> analyzes, and monetizes
+                    vast amounts of personal data from individuals, often
+                    without explicit knowledge<br> or consent, primarily
+                    through digital technologies and platforms, to generate
+                    profits.<br>
 
-In surveillance capitalism, individuals’ online activities, behaviors, preferences, and personal information are meticulously tracked, recorded, and analyzed by various companies and organizations. This data is then used to create detailed profiles and predictive models, which are leveraged to influence consumer behavior, target advertising, and shape market strategies.
-</p> 
-<p>
-Zuboff (Mother) argues that surveillance capitalism threatens privacy, democracy, and human freedom.
-    </p> 
-    <p>
-        What does this mean for you as a reader? 
-    </p>
-    <p>
-        WE (We are alll in thissss togetherrrrr) are constanstly being used by bigger tech compagnies such as Google ,Amazon ,Apple for our data and as a mean to deepen their pockets.
-    </p>
-    <p>
-        But no worries by the time you finish reading this magazine,you will be ready to sail the sea of the internet fully undetected!
-        </p>
-        <p>
-        Check out the about section to see what compagny has been stealing from you!
-    </p>
-</div>
+                    In surveillance capitalism, individuals’ online activities,
+                    behaviors, preferences,<br> and personal
+                    information are meticulously tracked, recorded, and analyzed
+                    by various companies and organizations.<br>
+                    This data is then used to create detailed profiles and
+                    predictive models, which are leveraged to
+                    influence <br> consumer behavior, target advertising, and shape
+                    market strategies.
+                </p>
+                <p class="highlight">
+                    Zuboff (Mother) argues that surveillance capitalism
+                    threatens privacy, democracy, and human freedom.
+                </p>
+                <p class="highlight" >
+                    What does this mean for you as a reader?
+                </p>
+                <p class="highlight" >
+                    WE (We are alll in thissss togetherrrrr) are constanstly
+                    being used by bigger tech compagnies <br>such as
+                    Google ,Amazon ,Apple for our data and as a mean to deepen
+                    their pockets.
+                </p>
+                <p class="highlight" >
+                    But no worries,<br> by the time you finish reading this
+                    magazine,<br>you will be ready to sail the sea of the
+                    internet fully undetected!
+                </p>
+                <p class="highlight" >
+                    Check out the about section <br>to see what compagny has been
+                    stealing from you!
+                </p>
+            </div>
+        </div> <!-- end page-wrapper -->
 
-</body>
+    </body>
+
 </html>

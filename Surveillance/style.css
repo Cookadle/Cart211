@@ -1,9 +1,29 @@
 /* BODY */
+/* Centers content mostly the background picture*/
+.page-wrapper { 
+    max-width: 2000px; 
+    margin: 0 auto;       
+    background-image: url('./assets/Mainbackground.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;  /* make all pages look same even if nocontent */
+    padding: 60px;
+   
+
+}
+
+/* Body stays as color for side  */
+body {
+    background: #cea6a6;
+}
+
 body {
     margin: 0;
     background: #cea6a6;
     font-family: Arial, sans-serif;
-    color: #0f0064;
+    color: #141414;
 }
 
 /*CAMERA (Styles the fixed camera GIFs on top corners)*/
@@ -46,12 +66,24 @@ p {
     line-height: 1.5;
 }
 
+.highlight {/*for behind text*/
+  background: #ffe9e9;
+  
+  padding: 12px; /*to make box smaller*/
+  border-radius: 12px;
+  max-width: 400px; /* adjust as you like */
+  margin: 0 auto; /* centers the box */
+  display: block; /* ensures it centers properly */
+
+}
+
+
 /*navigation tabs ( Styles the top navigation bar and links)*/
 .tabs {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #241517;
+    background-color: #ffffff00; /*fuck it no background for tab*/
     z-index: 2000;
     position: relative;
 }
@@ -67,21 +99,17 @@ p {
     cursor: pointer;
     font-family: 'Rock 3D', cursive;
     color: white;
-    padding: 10px 20px; /* Adds inner size */
-    font-size: 14px; /* Bigger text */
+    padding: 10px 20px;
+    font-size: 14px; 
     border-radius: 8px;
-    background-color: #241517; /*inside of tab button*/
+    background-color: #1f666b; /*inside of tab button*/
     text-decoration: none;
     transition: 0.3s;
     white-space: normal;
 }
 
 
-.tabs a:hover,
-.dropdown-btn:hover,
-.dropdown-content a:hover {
-    background-color: #140c0d;
-}
+
 
 /*dropdownmenu*/
 .dropdown {
@@ -96,7 +124,6 @@ p {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #d80cac;
     min-width: 200px;
     z-index: 5000;
     flex-direction: column;
@@ -154,7 +181,7 @@ body.captcha-page {
 #image {
     width: 100%;
     height: 100px;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     background: #ffffffd3;
     font-size: 48px;
     font-weight: bold;
@@ -172,7 +199,7 @@ body.captcha-page {
     gap: 10px;
     justify-content: center;
 }
-
+/*captcha input colour*/
 #user-input {
     flex: 1;
     padding: 10px;
@@ -275,7 +302,7 @@ body.captcha-page {
 }
 
 
-/* Tab button styling (they will stay in one row) */
+/* Tab button styling (they will stay in one row) important will override previous setting and allow them to both exist at the same time*/
 .tabs a,
 .dropdown-btn {
    min-width: 80px !important;
@@ -289,7 +316,7 @@ body.captcha-page {
 .tabs a:hover,
 /*color for when mouse is over button*/
 .dropdown-btn:hover {
-    background: linear-gradient(180deg, #ffb6b6, #ff8fcf);
+    background: linear-gradient(180deg, #2195ca, #10445c);
     transform: scale(1.05);
 }
 
@@ -298,7 +325,7 @@ body.captcha-page {
     position: absolute;
     display: none;
     flex-direction: column;
-    background-color: #050202;
+    background-color: #10445c;/*color between option of scrolldown*/
     min-width: 150px;
     border-radius: 6px;
     top: 100%;

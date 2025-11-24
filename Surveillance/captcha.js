@@ -17,14 +17,14 @@ function printmsg() {
     const user_input = document.getElementById("user-input").value;
 
     if (user_input === captcha.innerHTML) {
-        document.getElementById("key").innerHTML = "Matched ✅ Redirecting...";
+        document.getElementById("key").innerHTML = " Redirecting you to a better place ...";
           sessionStorage.setItem("captchaPassed", "true");
         // Redirect to the next page
        setTimeout(() => {
             window.location.href = "home.html"; // <-- change if your page has another name
         }, 1000);
     } else {
-        document.getElementById("key").innerHTML = "Not Matched ❌";
+        document.getElementById("key").innerHTML = "HELLO POLICE ? AI IS TRYING TO ENTER! ❌";
         generate(); // will refresh CAPTCHA
     }
 }

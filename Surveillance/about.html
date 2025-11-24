@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
 
-<!-- Google Font for Tabs -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- rock font-->
-<link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
-<!--Rubik iso font-->
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
-<!--Story script font-->
-<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+        <!-- Google Font for Tabs -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- rock font-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap"
+            rel="stylesheet">
+        <!--Rubik iso font-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"
+            rel="stylesheet">
+        <!--Story script font-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+</style>
 </head>
+    
+        <body class="about-page"> 
 
-<body class="about-page">
+            <div class="page-wrapper">
 
+            <!-- Camera GIFs -->
+            <div class="camera top-left"><img src="assets/camara-left.gif"
+                    alt="Camera left"></div>
+            <div class="camera top-right"><img src="assets/camera-right.gif"
+                    alt="Camera right"></div>
 
-<!-- Camera GIFs -->
-<div class="camera top-left"><img src="assets/camara-left.gif" alt="Camera left"></div>
-<div class="camera top-right"><img src="assets/camera-right.gif" alt="Camera right"></div>
-
-<script>
+            <script>/*wil stop access to jumping pages unless captcha was registered at least once*/
 if (sessionStorage.getItem("captchaPassed") !== "true") {
     alert("You must pass the CAPTCHA first!");
     window.location.href = "index.html";
 }
 </script>
 
-<!-- Navigation Tabs -->
-<div class="tabs">
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
+            <!-- Navigation Tabs -->
+            <div class="tabs">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
 
-    <div class="dropdown">
-    <button class="dropdown-btn"> Big Brother</button>
-        <div class="dropdown-content">
-            <a href="bigbrother-sees.html">Big Brother Sees All</a>
-            <a href="bigbrother-hears.html">Big Brother Hears All</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn"> Big Brother</button>
+                    <div class="dropdown-content">
+                        <a href="bigbrother-sees.html">Big Brother Sees All</a>
+                        <a href="bigbrother-hears.html">Big Brother Hears
+                            All</a>
+                    </div>
+                </div>
+
+                <a href="resources.html">Resources</a>
+                <a href="authornote.html">Author Note</a>
+            </div>
+
+            <!-- Page Content -->
+            <div class="content">
+                <h1>The Hidden Cost of Free: Your Privacy for Profit</h1>
+                <p>About the elephant in the room...</p>
+            </div>
         </div>
-    </div>
-
-    <a href="resources.html">Resources</a>
-    <a href="authornote.html">Author Note</a>
-</div>
-
-<!-- Page Content -->
-<div class="content">
-    <h1>The Hidden Cost of Free: Your Privacy for Profit</h1>
-    <p>About the elephant in the room...</p>
-</div>
-
-</body>
+    </body>
 </html>
-
