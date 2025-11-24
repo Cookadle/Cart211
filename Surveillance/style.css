@@ -46,13 +46,13 @@ p {
     line-height: 1.5;
 }
 
-/*NAVIGATION TABS ( Styles the top navigation bar and links)*/
+/*navigation tabs ( Styles the top navigation bar and links)*/
 .tabs {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* ensures vertical alignment */
     background-color: #241517;
+    z-index: 2000;
     position: relative;
 }
 
@@ -81,32 +81,39 @@ p {
 /*dropdownmenu*/
 .dropdown {
     position: relative;
-    display: inline-block; 
+    display: inline-block;
     flex-direction: column;
 }
+
 /* Hidden dropdown content until hovered */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
     background-color: #d80cac;
     min-width: 200px;
     z-index: 10;
     flex-direction: column;
-    border-radius: 6px; 
+    border-radius: 6px;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: flex;
 }
 
-/* dropdown button behaves like a link */
+/* dropdown button behaves as link */
 .dropdown-btn {
     display: inline-block;
     text-align: center;
     line-height: 1.2;
 }
+
+/* Make dropdown open on click (mobile + desktop optimize) */
+.dropdown:focus-within .dropdown-content {
+    display: flex;
+}
+
 
 /*PAGE CONTENT*/
 .content {
@@ -203,102 +210,149 @@ body.captcha-page {
 
 .refresh-btn:hover {
     background: #222;
-} 
+}
 
 
 
 /*Mobile section /Optimizing for mobile*/
 @media (max-width: 600px) {
+    /*Content mobile*/
+    .content {
+    margin: 20px auto;
+    padding: 0 10px;
+    max-width: 95%;
+    }
 
     /* Camera GIFs mobile */
     .camera {
-        width: 80px;
-        height: 80px;
+       margin-top: 150px; 
+
     }
 
     .top-left {
-        left: -10px;
-        top: 5px;
+        left: -70px;
+        /*top: 0px;*/
     }
 
     .top-right {
-        right: -10px;
-        top: 5px;
+        right: -70px;
+        /*top: 0px;*/
     }
-
+    
     /* Laptop GIF */
     .creepy.laptop img {
         width: 150px;
     }
 
-    /* Navigation tabs stacked vertically */
+    /* Navigation tabs*/
     .tabs {
-        flex-direction: column;
-        align-items: center;
+        display: flex;                 
+        flex-direction: row;           
+        justify-content: flex-start;   
+        align-items: center;       
+        gap: 10px;                    
+        flex-wrap: nowrap;               
+        overflow-x: auto;       
+        white-space: nowrap;     
+        padding: 10px;
+        scrollbar-width: none;   
+    } 
+    /* Hide scrollbar duh*/
+    .tabs::-webkit-scrollbar {
+        display: none;
     }
 
+
+/* Tab button styling (they will stay in one row) */
     .tabs a,
     .dropdown-btn {
-        padding: 12px;
-        font-size: 16px;
-        width: 100%;
+   min-width: 80px;              
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #241517;
+        color: white;
+        font-size: 14px;
         text-align: center;
+        line-height: 1.2;
+        white-space: normal;
     }
+.tabs a:hover,
+    .dropdown-btn:hover {
+        background: linear-gradient(180deg, #ffb6b6, #ff8fcf);
+        transform: scale(1.05);
+    } 
 
     /* Dropdown content on mobile */
     .dropdown-content {
-        position: static;
+        position: absolute;
         display: none;
         flex-direction: column;
-        width: 100%;
+        background-color: #050204;
+        min-width: 150px;
+        border-radius: 6px;
+        top: 100%;
+        left: 0;
+        z-index: 10;
     }
-
     .dropdown:hover .dropdown-content,
     .dropdown:focus-within .dropdown-content {
         display: flex;
     }
 
-    /*Content mobile*/
-    .content {
-        margin: 20px auto;
-        padding: 0 10px;
-        max-width: 95%;
-    }
 
-    /*Paragraph and headers and fonts on mobile*/
-    h1 {
-        font-size: 2rem;
-    }
+/*Paragraph and headers and fonts on mobile*/
+h1 {
+    font-size: 2rem;
+}
 
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+/* Lower heading placement mobile(only) 4 home page bc camera gifs*/
+body.home-page .content h1 {
+    margin-top: 150px;
+}
+/* Lower heading placement on mobile(only) 4 about page  bc camera gifs*/
+body.about-page .content h1 {
+    margin-top: 200px; 
+}
+/* Lower heading placement on mobile(only) 4 bigbro sees all  bc camera gifs*/
+body.bigbrother-sees-page .content h1 {
+    margin-top: 150px; 
+}
+/* Lower heading placement on mobile(only) 4 bigbog hears all  bc camera gifs*/
+body.bigbrother-hears-page .content h1 {
+    margin-top: 150px; 
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
-    /*Captcha mobile*/
-    .captcha-card {
-        width: 90%;
-        padding: 20px;
-    }
+/*Captcha mobile*/
+.captcha-card {
+    width: 90%;
+    padding: 20px;
+}
 
-    #image {
-        height: 80px;
-        font-size: 32px;
-        letter-spacing: 5px;
-    }
+#image {
+    height: 80px;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
 
-    #user-input {
-        font-size: 16px;
-    }
+#user-input {
+    font-size: 16px;
+}
 
-    #btn {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
+#btn {
+    font-size: 16px;
+    padding: 8px 16px;
+}
 
-    .refresh-btn {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-} 
-
+.refresh-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+}
