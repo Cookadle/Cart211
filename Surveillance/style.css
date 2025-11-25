@@ -53,7 +53,7 @@ body {
 
 h1 {
     font-family: 'Rubik Iso', sans-serif;
-    font-size: 3rem;
+    font-size: 3rem; 
 }
 
 p {
@@ -72,8 +72,6 @@ p {
     margin: 0 auto;
     /* centers the box */
     display: block;
-    /*will center it properly */
-
 }
 
 
