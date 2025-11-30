@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Author Note</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Note</title>
 
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- rock font-->
-<link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
-<!--Rubik iso font-->
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
-<!--Story script font-->
-<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Honk font -->
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@24,74&display=swap" rel="stylesheet">
+    <!--Rubik iso font-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <!--Story script font-->
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
 
-</style>
+    </style>
 </head>
 
 <body>
-<body class="authornote-page"> 
 
-            <div class="page-wrapper">
-<!-- Camera GIFs -->
-<div class="camera top-left"><img src="assets/camara-left.gif" alt="Camera left"></div>
-<div class="camera top-right"><img src="assets/camera-right.gif" alt="Camera right"></div>
+    <body class="authornote-page">
 
-<script>
-if (sessionStorage.getItem("captchaPassed") !== "true") {
-    alert("You must pass the CAPTCHA first!");
-    window.location.href = "index.html";
-}
-</script>
+        <div class="page-wrapper">
+            <!-- Camera GIFs -->
+            <div class="camera top-left"><img src="assets/camara-left.gif" alt="Camera left"></div>
+            <div class="camera top-right"><img src="assets/camera-right.gif" alt="Camera right"></div>
 
-<!-- Navigation Tabs -->
-<div class="tabs">
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
+            <script>
+                if (sessionStorage.getItem("captchaPassed") !== "true") {
+                    alert("You must pass the CAPTCHA first!");
+                    window.location.href = "index.html";
+                }
+            </script>
 
-    <div class="dropdown">
-    <button class="dropdown-btn"> Big Brother</button>
-        <div class="dropdown-content">
-            <a href="bigbrother-sees.html">Big Brother Sees All</a>
-            <a href="bigbrother-hears.html">Big Brother Hears All</a>
-        </div>
-    </div>
+            <!-- Navigation Tabs -->
+            <div class="tabs">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
 
-    <a href="resources.html">Resources</a>
-    <a href="authornote.html">Author Note</a>
-</div>
+                <div class="dropdown">
+                    <button class="dropdown-btn"> Big Brother</button>
+                    <div class="dropdown-content">
+                        <a href="bigbrother-sees.html">Big Brother Sees All</a>
+                        <a href="bigbrother-hears.html">Big Brother Hears All</a>
+                    </div>
+                </div>
 
-<!-- Page Content -->
-<div class="content">
-    <h1>Author Note</h1>
-    <p>Notes from me will go here.</p>
-</div>
+                <a href="resources.html">Resources</a>
+                <a href="authornote.html">Author Note</a>
+            </div>
 
-</body>
+            <!-- Page Content -->
+            <div class="content">
+                <h1>Author Note</h1>
+                <p>Notes from me will go here.</p>
+            </div>
+
+    </body>
+
 </html>

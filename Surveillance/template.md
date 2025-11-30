@@ -4,17 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources</title>
+    <title></title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Honk font -->
+
     <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@24,74&display=swap" rel="stylesheet">
+    
     <!--Rubik iso font-->
+
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+
     <!--Story script font-->
+
     <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -56,10 +62,10 @@
 
             <!-- Page Content -->
             <div class="content">
-                <h1>Resources</h1>
-                <p>Links, files,documents will be placed here.</p>
+                <h1></h1>
+                <p class="highlight" ></p>
             </div>
-
+        </div> <!-- end page-wrapper -->
     </body>
 
 </html>
