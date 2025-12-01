@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@24,74&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@86,21&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="page-wrapper">
+        <!-- Camera GIFs -->
+        <div class="camera top-left"><img src="assets/camara-left.gif" alt="Camera left"></div>
+        <div class="camera top-right"><img src="assets/camera-right.gif" alt="Camera right"></div>
+
+        <script>
+            if (sessionStorage.getItem("captchaPassed") !== "true") {
+                alert("You must pass the CAPTCHA first!");
+                window.location.href = "index.html";
+            }
+        </script>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+
+            <!-- Big Brother Dropdown -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Big Brother</button>
+                <div class="dropdown-content">
+                    <a href="bigbrother-sees.html">Big Brother Sees All</a>
+                    <a href="bigbrother-hears.html">Big Brother Hears All</a>
+                </div>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Resources</button>
+                <div class="dropdown-content">
+                    <a href="resources.html">About Zuboff</a>
+                    <a href="freedom.html">A Guide to Online Freedom</a>
+                    <a href="illusion.html">Is Freedom an Illusion?</a>
+                    <a href="library.html">More Reading</a>
+                </div>
+            </div>
+
+            <!-- Author Note Link -->
+            <a href="authornote.html">Author Note</a>
+        </div>
+
+        <!-- Page Content -->
+        <div class="content">
+            <h1>Resources on Privacy and Surveillance</h1>
+            <p class="highlight">
+                Here are some resources that delve into the themes of surveillance capitalism, privacy, and online freedom.
+        <br>Many were used for this website.<br>Some are linked for YOU (reader)to use and explore
+            </p>
+
+            <h2>Privacy and Online Freedom Tools:</h2>
+            <ul>
+                <li><a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a> - A privacy-focused search engine that doesn’t track you.</li>
+                <li><a href="https://www.startpage.com" target="_blank">StartPage</a> - A search engine that offers anonymous browsing by not storing your personal data.</li>
+                <li><a href="https://www.brave.com" target="_blank">Brave</a> - A privacy-focused web browser that blocks ads and trackers.</li>
+                <li><a href="https://www.mozilla.org/en-US/firefox/" target="_blank">Firefox</a> - A privacy-conscious browser that offers various privacy extensions and settings.</li>
+                <li><a href="https://www.expressvpn.com" target="_blank">ExpressVPN</a> - A VPN service that helps you secure your internet connection and maintain anonymity.</li>
+                <li><a href="https://www.nordvpn.com" target="_blank">NordVPN</a> - Another popular VPN service that ensures online security and privacy.</li>
+                <li><a href="https://signal.org" target="_blank">Signal</a> - A secure, encrypted messaging app that prioritizes privacy.</li>
+            </ul>
+
+            <h2>Shoshana Zuboff's Work:</h2>
+            <ul>
+                <li><a href="https://www.amazon.com/Age-Surveillance-Capitalism-Industrial-Revolution/dp/1610395697" target="_blank">The Age of Surveillance Capitalism</a> - The book that discusses the perils of surveillance capitalism.</li>
+                <li><a href="https://www.ted.com/talks/shoshana_zuboff_the_age_of_surveillance_capitalism" target="_blank">Shoshana Zuboff's TED Talk</a> - Zuboff talks about her book and the concepts of surveillance capitalism.</li>
+            </ul>
+
+            <h2>Other Resources:</h2>
+            <ul>
+                <li><a href="https://bigbrotherwatch.org.uk" target="_blank">Big Brother Watch</a> - An advocacy group focused on privacy and surveillance issues in the UK, aligning with the themes discussed in Zuboff's work.</li>
+                <li><a href="https://www.privacytools.io" target="_blank">PrivacyTools.io</a> - A website that helps users secure their online privacy with recommended tools like VPNs, encrypted email services, and more.</li>
+                <li><a href="https://www.eff.org" target="_blank">Electronic Frontier Foundation (EFF)</a> - A nonprofit that works to protect digital privacy, free expression, and consumer rights.</li>
+                <li><a href="https://www.prospectmagazine.co.uk/views/columns/60888/an-internet-with-less-surveillance-could-be-possible.-this-is-how" target="_blank">An Internet with Less Surveillance: Could It Be Possible?</a> - An article discussing potential ways to reduce surveillance on the internet.</li>
+                <li><a href="https://tnsafety.com/pokemon-go-surveillance-scandal-from-conspiracy-theory-to-confirmed-reality" target="_blank">Pokemon Go Surveillance Scandal: From Conspiracy Theory to Confirmed Reality</a> - A detailed look at how Pokemon Go raised privacy concerns and surveillance issues.</li>
+            </ul>
+
+            <footer> 
+                END
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
