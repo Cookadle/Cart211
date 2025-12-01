@@ -4,70 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mother</title>
+    <title>The Age of Surveillance Capitalism</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Honk font -->
     <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@24,74&display=swap" rel="stylesheet">
+    
     <!--Rubik iso font-->
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+
     <!--Story script font-->
     <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
+
     <!--Nabla font-->
-    <link href="https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@86,21&display=swap"
-     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@86,21&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-
-    </style>
 </head>
 
-<body>
+<body class="authornote-page">
+    <div class="page-wrapper">
+        <!-- Camera GIFs -->
+        <div class="camera top-left"><img src="assets/camara-left.gif" alt="Camera left"></div>
+        <div class="camera top-right"><img src="assets/camera-right.gif" alt="Camera right"></div>
 
-    <body class="authornote-page">
-        <div class="page-wrapper">
-            <!-- Camera GIFs -->
-            <div class="camera top-left"><img src="assets/camara-left.gif" alt="Camera left"></div>
-            <div class="camera top-right"><img src="assets/camera-right.gif" alt="Camera right"></div>
+        <script>
+            if (sessionStorage.getItem("captchaPassed") !== "true") {
+                alert("You must pass the CAPTCHA first!");
+                window.location.href = "index.html";
+            }
+        </script>
 
-            <script>
-                if (sessionStorage.getItem("captchaPassed") !== "true") {
-                    alert("You must pass the CAPTCHA first!");
-                    window.location.href = "index.html";
-                }
-            </script>
+        <!-- Navigation Tabs -->
+        <div class="tabs">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
 
-            <!-- Navigation Tabs -->
-            <div class="tabs">
-                <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-
-                <div class="dropdown">
-                    <button class="dropdown-btn"> Big Brother</button>
-                    <div class="dropdown-content">
-                        <a href="bigbrother-sees.html">Big Brother Sees All</a>
-                        <a href="bigbrother-hears.html">Big Brother Hears All</a>
-                    </div>
+            <!-- Big Brother Dropdown -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Big Brother</button>
+                <div class="dropdown-content">
+                    <a href="bigbrother-sees.html">Big Brother Sees All</a>
+                    <a href="bigbrother-hears.html">Big Brother Hears All</a>
                 </div>
-
-                <a href="resources.html">Resources</a>
-                <a href="authornote.html">Author Note</a>
             </div>
 
-            <!-- Page Content -->
-            <div class="content">
-                <h1></h1>
-                <p></p> 
-                <p>https://remoteworkrebels.com/how-to-sell-data-for-money/ image
-                    https://indonesian-recipes.com/download/wiki-2025.html eye gif
-                </p>
+            <!-- Resources Dropdown -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Resources</button>
+                <div class="dropdown-content">
+                    <a href="resources.html">About Zuboff</a>
+                    <a href="freedom.html">A Guide to Online Freedom</a>
+                    <a href="illusion.html">Is Freedom an Illusion?</a>
+                    <a href="library.html">More reading</a>
+                </div>
             </div>
 
-    </body>
+            <!-- Author Note Link -->
+            <a href="authornote.html">Author Note</a>
+        </div>
+
+        <!-- Page Content -->
+         <!-- Book Image -->
+            <div class="book-image">
+    <img src="assets/book.png" alt="The Age of Surveillance Capitalism" style="max-width: 100%; height: auto;">
+</div>
+        <div class="content">
+            <h1>The Age of Surveillance Capitalism: A New Era of Control</h1>
+
+            <p class="highlight">
+                In her groundbreaking book <a href="https://www.amazon.com/Age-Surveillance-Capitalism-Industrial-Revolution/dp/1610395697" target="_blank">The Age of Surveillance Capitalism</a>
+ Shoshana Zuboff dives deep into the ways corporations have seized control of our personal data, often without our explicit consent, and how they use that information to profit. Zuboff outlines the concept of "surveillance capitalism"—the business model that thrives on collecting, analyzing, and profiting from personal data. Companies, particularly tech giants like Google, Facebook, and Amazon, have become powerful data brokers, tracking our every move, click, and even our thoughts and preferences to create detailed profiles that can be monetized.
+            </p>
+
+            <p class="highlight">
+                Zuboff's work argues that this phenomenon goes far beyond the realm of advertising and marketing—it has profound implications for privacy, democracy, and individual freedom. Surveillance capitalism has infiltrated nearly every aspect of our digital lives, whether it's through social media platforms that track our every like, search engines that store our queries, or voice assistants that listen in on our private conversations. It's a model that profits from the extraction of our personal data, often without us realizing how much is being taken, and even less about how it's being used.
+            </p>
+
+            <p class="highlight">
+                This website was inspired by Zuboff's article and book, as we aim to shed light on how pervasive data collection has become in our everyday lives. The growing concerns about surveillance and privacy are real, and it's important for users to understand how their data is being used. We believe in creating awareness around the digital systems that often operate in the background without explicit consent. By understanding the issues around surveillance capitalism, we can begin to reclaim control over our personal data and demand better accountability from corporations.
+            </p>
+            <!-- Next Page -->
+            <footer>
+                <a href="freedom.html">Next page</a>
+            </footer>
+
+        </div>
+    </div> <!-- end page-wrapper -->
+</body>
 
 </html>

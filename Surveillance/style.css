@@ -93,7 +93,7 @@ footer {
     margin: 0 auto;
     /* footer horizontally */
 }
-
+/*example box for brothers tab*/
 .example {
     background-color: #f9f9f9;
     padding: 5px;
@@ -249,7 +249,16 @@ body.captcha-page {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}/*for zuboff book cover*/
+.book-image {
+    display: flex;
+    justify-content: center; /
+    align-items: center;    
+    height: 400px; 
+    width: 100%; 
+    margin-top: 50px;      
 }
+
 
 /*box where the user put his things*/
 .input-row {
