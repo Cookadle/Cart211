@@ -69,6 +69,12 @@
                 <h1></h1>
                 <p class="highlight" > 
                 </p>
+                <p class="highlight"></p>
+<p class="highlight"></p>
+<p class="highlight"></p>
+<p class="highlight"></p>
+<p class="highlight"></p>
+<p class="highlight"></p>
                 <footer> 
    <a href="">Next page </a></p> 
    </footer>
