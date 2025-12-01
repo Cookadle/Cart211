@@ -21,6 +21,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
 
+    <!--Nabla font-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@86,21&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -63,9 +67,14 @@
             <!-- Page Content -->
             <div class="content">
                 <h1></h1>
-                <p class="highlight" ></p>
+                <p class="highlight" > 
+                </p>
+                <footer> 
+   <a href="">Next page </a></p> 
+   </footer>
             </div>
         </div> <!-- end page-wrapper -->
+
     </body>
 
 </html>
