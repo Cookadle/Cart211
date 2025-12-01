@@ -1,19 +1,14 @@
 /* Centers content mostly background picture*/
 .page-wrapper {
+    min-height: 100vh;  
     max-width: 2000px;
     margin: 0 auto;
-    /* Centers wrapper horizontally */
     background-image: url('./assets/Mainbackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    /* make all pages look same even if no content for now*/
     padding: 60px;
-
-
 }
-
 /* Body stays as color for the side  remove fint later */
 body {
     margin: 0;
@@ -21,6 +16,7 @@ body {
     font-family: Arial, sans-serif;
     color: #3b3030;
 }
+
 
 /*camera (Styles the fixed camera GIFs on top corners)*/
 .camera {
