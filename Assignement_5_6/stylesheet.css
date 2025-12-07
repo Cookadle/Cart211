@@ -307,3 +307,56 @@ footer {
     padding: 50px;
     color: rgb(105, 105, 105);
 }
+
+/* ---------------------------------------------------------
+HAMBURGER MENU
+--------------------------------------------------------- */
+
+.hamburger-menu button {
+
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ---------- MOBILE VERSION ---------- */
+
+@media (max-width: 900px) {
+
+    .hamburger-menu button {
+        display: block;
+    }
+
+    .menu1 {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 20px;
+        transition: right 0.3s ease;
+    }
+
+    .menu1.menu-deployed {
+        right: 0;
+    }
+
+    .close-menu {
+        display: block;
+        align-self: flex-end;
+    }
+}
