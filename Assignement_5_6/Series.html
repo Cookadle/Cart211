@@ -19,24 +19,33 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
 
-        </header>
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <div class="logo">
-                <a href="Home.html">
-                    <img src="assets/logo.png" alt="logo of humans of ny project" width="100" height="50">
-                </a>
-            </div>
-            <div class="menu1">
-                <a href="Home.html">Home</a>
-                <a href="Series.html">Story</a>
-                <a href="About.html">Works</a>
-            </div>
-        </nav>
-        <main>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="Home.html">
+                <img src="assets/logo.png" alt="Humans of New York logo" width="100" height="50">
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="menu1">
+            <button class="close-menu">&times;</button>
+            <a href="Home.html">Home</a>
+            <a href="Series.html">Story</a>
+            <a href="About.html">Works</a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <div class="hamburger-menu">
+            <button>
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
             <div class="thumbnailTitle">
                 <h1 class="ArticleTitle">Humans of New York</h1>
             </div>
@@ -111,7 +120,22 @@
                     student 2025</small>
             </div>
         </footer>
-    </div>
+   
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerButton = document.querySelector('.hamburger-menu button');
+const closeButton = document.querySelector('.close-menu');
+const menu1 = document.querySelector('.menu1');
+
+hamburgerButton.addEventListener('click', () => {
+    menu1.classList.add('menu-deployed');
+});
+closeButton.addEventListener('click', () => {
+    menu1.classList.remove('menu-deployed');
+});
+});
+
+</script>
 </body>
 
 </html>
