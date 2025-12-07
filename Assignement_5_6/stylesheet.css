@@ -111,17 +111,20 @@ article p:last-child {
 .ArticleTitle {
     text-align: left;
 }
+
 .story-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    align-items: start; /* ensures text and image align at top */
+    align-items: start;
+    /* ensures text and image align at top */
 }
 
 .storie-left {
     grid-column: 1 / 7;
     display: flex;
-    justify-content: center; /* centers the image horizontally in its column */
+    justify-content: center;
+    /* centers the image horizontally in its column */
 }
 
 .storie-left figure {
@@ -136,7 +139,8 @@ article p:last-child {
 
 .storie-rigth {
     grid-column: 7 / 13;
-    text-align: left; /* text stays on right side */
+    text-align: left;
+    /* text stays on right side */
 }
 
 .storie-rigth h2 {
@@ -280,19 +284,21 @@ article p:last-child {
 /* ---------------------------------------------------------
    
 --------------------------------------------------------- */
-.social{
+.social {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-.social .fa{
+
+.social .fa {
     padding: 12px;
     font-size: 3em;
     color: #211F5D;
 
 }
-.credit{
+
+.credit {
     margin: 0 auto;
     text-align: center;
 }
